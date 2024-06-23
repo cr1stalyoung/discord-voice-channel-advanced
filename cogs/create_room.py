@@ -5,7 +5,7 @@ import disnake
 from disnake.ext import commands
 
 
-class Buttons(commands.Cog):
+class Channel(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.view = views
@@ -112,5 +112,5 @@ class Buttons(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Buttons(bot))
+    bot.add_cog(Channel(bot))
 
