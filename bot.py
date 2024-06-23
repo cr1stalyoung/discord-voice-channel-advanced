@@ -1,7 +1,8 @@
-import disnake
-from disnake.ext import commands
 import os
 import asyncio
+import settings
+import disnake
+from disnake.ext import commands
 
 bot = commands.Bot(
     command_prefix='!',
@@ -20,4 +21,4 @@ async def main():
     await load()
 
 asyncio.run(main())
-bot.run("TOKEN")
+bot.run(settings.API_TOKEN)
